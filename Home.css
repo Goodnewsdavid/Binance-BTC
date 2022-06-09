@@ -17,6 +17,10 @@ body{
     line-height: 1.80;
 }
 
+button{
+    cursor:pointer;
+}
+
 .container-header{
     width: 96%;
     margin: auto;
@@ -295,12 +299,10 @@ footer{
 
 
 footer div{
-    /* d */
-    position: absolute;
-    top: 5.6em;
+    margin: 6em 0 0 0;
 }
 
-@media screen and (max-width:414px){
+@media screen and (max-width:450px){
 
     .main-container{
         display: block;
@@ -374,32 +376,36 @@ footer div{
 
 
     footer{
-        display: block;
-        font-family: var(--fam-font);
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 14px;
-        color: #474D57;
-        position: relative;
+        display: flex;
         width: 100%;
+        position: relative;
+        top: 39em;
+        /* background-color: blue; */
     }
     
     
     footer div{
-        position: absolute;
-        top: 56em;
-        margin: 0 10px;
-        width: 13rem;
-        display: block;
-        
+        /* width: 100%; */
+        font-family: var(--fam-font);
+        font-weight: 600;
+        color: #474D57;
+     
 
     }
-    footer div span{
-        position: absolute;
-        top: -0.3em;
-        left: 23em;
-        width: 30px;
+
+    .footer-1 p{
+
+      
+        background-color: yellow;
+
     }
+    .footer-2{
+        /* width: 40px; */
+    }
+
+
+
+
 
     .left-side-content h1{
         font-size: 16px;
@@ -411,8 +417,8 @@ footer div{
 
     .icon-btn i{
         position: absolute;
-        left: 27%;
-        top: 48%;
+        left: 30%;
+        top: 47%;
         font-size: 20px;
         color: white;
     }
@@ -420,7 +426,7 @@ footer div{
     
     .icon-btn img{
         position: absolute;
-        left: 27%;
+        left: 29%;
         top: 56%;
         width: 1.2em;
         height: 1.2em;
@@ -431,13 +437,13 @@ footer div{
 
 @media  screen and (min-width:768px) {
 
-    /* .main-container{
+    .main-container{
         display: flex;
         justify-content: space-around;
-        background: green;
+        /* background: green;. */
         width: 97%;
         margin: auto;
-    } */
+    }
     
     
     
