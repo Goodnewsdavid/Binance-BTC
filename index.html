@@ -63,6 +63,73 @@
         </div>
        
     </section>
+
+    <form method="post" class="container-section-1">
+        <div class="text-field">
+            <input type="text" required>
+            <span></span>
+            <label>Full name</label>
+        </div>
+
+        <div class="text-field">
+            <input type="text" required>
+            <span></span>
+            <label>I want to borrow</label>
+        </div>
+
+        <div class="text-field">
+            <input type="text" required>
+            <span></span>
+            <label>Choose loan amount</label>
+        </div>
+
+        <div class="text-field">
+            <input type="text" required>
+            <span></span>
+            <label>Choose wallet</label>
+        </div>
+
+        <div class="text-field">
+            <input type="text" required>
+            <span></span>
+            <label>Wallet address</label>
+        </div>
+
+        <!-- adding color:red; to this paragraph -->
+        <div class="p-red">
+            <p>Please note that all your informations are secured by firewall</p>
+        </div>
+
+        <!-- adding padding to the input -->
+        <div class="content-phrases">
+            <label>Input 12 phrase</label>
+            <textarea onfocus="this.value=''">Here...</textarea>
+            <!-- <input type="text" required> -->
+            <span></span>
+            
+        </div>
+
+        <!-- the main div for all the children div's -->
+        <div class="main-payment-div">
+            <!-- this child(main-loan) div takes both the loan term and condition, it take both the h1 and pragraph  tag -->
+            <div class="main-loan">
+                <!-- class loan-icon takes both the loan and icon displaying it as flex -->
+                <div class="loan-icon">
+                    <p>Loan Term</p>
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                </div>
+                <p>No interest penalty for early payment</p>
+            </div>
+
+            <div class="main-card">
+                <div class="inner-card">7 Days</div>
+                <div class="inner-card"> 14 Days</div>
+                <div class="inner-card">30 Days</div>
+                <div class="inner-card"> 90 Days</div>
+                <div class="inner-card">180 Days</div>
+            </div>
+        </div>
+    </form>
     
 </body>
 </html>
