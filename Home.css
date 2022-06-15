@@ -146,6 +146,8 @@ border-radius: 5px;
     margin-top: 2em;
     border: none;
     background: #F3BA2F;
+    font-size: 16px;
+    font-family: var(--fam-font);
     
 }
 
@@ -181,10 +183,11 @@ border-radius: 5px;
 
 .icon-btn i{
     position: absolute;
-    left: 23%;
-    top: 48%;
+    left: 18%;
+    top: 50%;
     font-size: 20px;
     color: white;
+    font-weight: 500;
 }
 
 .inner-icon-btn{
@@ -194,8 +197,8 @@ border-radius: 5px;
 
 .icon-btn img{
     position: absolute;
-    left: 21%;
-    top: 56%;
+    left: 16%;
+    top: 58%;
     width: 1.2em;
     height: 1.2em;
 }
@@ -205,12 +208,15 @@ border-radius: 5px;
     color: white;
     background: black;
     border: none;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .btn-google{ 
     margin-top: 2em;
     border: 1px solid  #A5A5A5;
     background: none;
+    font-size: 16px;
 }
 
 .same-color-fp{
@@ -273,7 +279,6 @@ border-radius: 5px;
     width:40% ;
     background: #F3BA2F;
     font-family: var(--fam-font);
-    font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 29px;

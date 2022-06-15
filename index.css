@@ -31,6 +31,7 @@
     width:10em ;
     margin-bottom: 23px;
     font-size: 20px;
+    
 }
 
 .inner-first-inner-content-header{
@@ -142,7 +143,7 @@
     
 }
 
-.inner-frist div{
+.inner-frist, .color-yellow, .gray-color{
     margin:0 20px 0 0;
     font-family: var(--fam-font);
     font-weight: 700;
@@ -151,12 +152,72 @@
     position: relative;
 }
 
-
-
-
-.gray-color{
-    color: #707A8A;
+/* .color-yellow a{
+    color: #1E2329;
+    position: relative;
+    text-decoration: none;
+  
 }
+
+.color-yellow a::before{
+    content: '';
+    position:absolute;
+    top: 2em;
+    width: 100%;
+    height: 5px;
+    background: #F3BA2F !important;
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 300ms ease-in-out;
+    
+} */
+
+/* .color-yellow a:focus::before{
+    transform: scaleX(1);
+    transform-origin: left;
+} */
+
+
+.color-yellow a{
+    color: #1E2329;
+  
+}
+
+.gray-color a{
+    color: #707A8A ;
+}
+
+.inner-frist div a{
+    text-decoration: none;
+    position: relative;
+    /* background: purple; */
+}
+
+.inner-frist div a::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: #F3BA2F;
+    left: 0;
+    bottom: 0;
+    top: 2em;
+    z-index: 1;
+    border-radius:50px ;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 230ms ease-in;
+  
+
+}
+
+.inner-frist div a:focus::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
 
 .inner-second{
     display:flex;
@@ -174,22 +235,23 @@
     position: relative;
 }
 
-.inner-second div a::after{
+.inner-second div a::before{
     content: '';
     width: 100%;
-    height: 3px;
+    height: 5px;
     position: absolute;
-    top: 21px;
+    top: 39px;
     left: 0;
     bottom:0;
     background: rgba(21, 46, 121, 0.56);
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 230ms ease-in;
+    z-index: 1;
+    border-radius: 5px;
 }
 
-.inner-second div a:hover::after{
-    /* background: green; */
+.inner-second div a:hover::before{
     transform: scaleX(1);
     transform-origin: left;
 }
@@ -203,22 +265,7 @@
     right: 0.1%;
 
 }
-.color-yellow{
-    position: relative;
-}
-.color-yellow{
-    position: absolute;
-    width: 60px;
-    height: 5px;
-    background: #F3BA2F;
-    left: -0.2em;
-    top: 2.4em;
-    z-index: 1;
-    border-radius:50px ;
-  
 
-    
-}
 
 form .text-field{
     position: relative;
@@ -327,7 +374,6 @@ form .text-field{
     font-weight: 700;
     font-size: 16px;
  
-    /* line-height: 19px; */
 }
 
 
@@ -419,4 +465,12 @@ form .text-field{
     color: #848E9C;
     text-align: center;
     padding: 20px 0 20px 0;
+}
+
+@media screen and (max-width:480px){
+
+.container-header{
+    background: yellow;
+}
+    
 }
