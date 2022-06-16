@@ -42,7 +42,6 @@
     font-size: 14px;
     font-weight: 400;
     margin:  5px;
-    /* margin: 4px; */
 } 
 
  .inner-first-inner-content-header div{
@@ -97,31 +96,31 @@
 
 .cross-line{
     width: 100%;
+    
+}
+
+.inner-cross-line{
+    width: 100%;
     padding: 18px;
     background: rgba(134, 148, 189, 0.56);
     display: flex;
-   
+    
 }
 
-.cross-line p{
+.inner-cross-line p{
     letter-spacing: 1px;
-    /* width: 100px; */
-    margin: 0 10px 0 47px;
+    padding: 0 10px 0 47px;
     font-family: var(--fam-font);
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    
-    
-    /* line-height: 17px; */
     color: #848E9C;
 }
 
-.cross-line img{
+.inner-cross-line img{
     width: 20px;
     margin: 0 0 0 5px;
-
 }
+
 
 .container-section-1{
     width: 96%;
@@ -152,31 +151,6 @@
     position: relative;
 }
 
-/* .color-yellow a{
-    color: #1E2329;
-    position: relative;
-    text-decoration: none;
-  
-}
-
-.color-yellow a::before{
-    content: '';
-    position:absolute;
-    top: 2em;
-    width: 100%;
-    height: 5px;
-    background: #F3BA2F !important;
-    z-index: 1;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: 300ms ease-in-out;
-    
-} */
-
-/* .color-yellow a:focus::before{
-    transform: scaleX(1);
-    transform-origin: left;
-} */
 
 
 .color-yellow a{
@@ -191,7 +165,6 @@
 .inner-frist div a{
     text-decoration: none;
     position: relative;
-    /* background: purple; */
 }
 
 .inner-frist div a::before{
@@ -424,6 +397,7 @@ form .text-field{
 .inner-footer{
     padding: 40px;
     display: flex;
+    flex-wrap: wrap;
     
 }
 
@@ -467,10 +441,168 @@ form .text-field{
     padding: 20px 0 20px 0;
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:650px){
 
-.container-header{
-    background: yellow;
+    body{
+        overflow-x: hidden;
+    }
+    .container-header{
+        width: 100%;
+        height: auto;
+
+    }
+
+    .first-inner-content-header{
+        display:block;
+        text-align: center;
+        
+    }
+
+    .first-inner-content-header img{
+        margin: 30px 67px 0 0;
+        width: 15em;
+        
+    }
+
+    .inner-first-inner-content-header{
+        display: none;
+    }
+
+    .second-inner-content{
+    
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .second-inner-content h1{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .inner-sec{
+
+        line-height: 1.4;
+        margin: 0 5em;
+        
+        
+    }
+
+    .hd-flex{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 10px 0 -15px 27px;
+        
+    }
+
+    .hd-flex p{
+        font-size: 1.3em;
+        
+    }
+    .inner-cross-line{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    .cross-line > img{
+        width: 30px;
+        margin: 0 -10em 0 0;
+    
+        
+    }
+
+    .text-field input, 
+    .content-phrases textarea{
+        width: 100%;
+
+    }
+
+    .container-section-1{
+        padding:0;
+    }
+
+
+
+
+    .inner-footer{
+        display: grid;
+        grid-gap:  5em;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .inner-footer  > div{
+        margin: 0;
+    }
+
+    .end-page-footer{
+        font-size: 1em;
+    }
+
+    .inner-container-section{
+        display: none;
+    }
+
+
 }
+
+@media screen and (max-width:768px)  {
+
+    .container-header{
+        width: 100%;
+        height: auto;
+        
+    }
+    .inner-container-section{
+        display: none;
+    }
+
+    .container-section-1{
+        padding:0;
+    }
+
+
+    .text-field input, 
+    .content-phrases textarea{
+    width: 86%;
+
+    }
+
+    .inner-cross-line p{
+        padding: 0 12px 0 10px;
+    }
+
+    .inner-footer{
+        display: grid;
+        grid-gap:  1em;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .inner-footer  > div{
+        margin: 0 0 20px 0;
+    }
+    
+    .end-page-footer{
+        font-size: 1em;
+    }
+
+ 
+}
+
+@media  screen and (min-width:1025px) {
+
+    .text-field input, 
+    .content-phrases textarea{
+        width: 27%;
+
+    }
+
+    .inner-footer{
+
+        flex-wrap: wrap ;
+
+    }
+
     
 }
